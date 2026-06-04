@@ -75,21 +75,8 @@ export default function Contact() {
                 <MapPin size={18} />
               </div>
               <div className="contact-detail-content">
-                <span className="detail-label">HEAD OFFICE</span>
-                <span className="detail-value">
-                  Dolphins Technology, Daimler Green,<br />
-                  Alverley Road, CV6 3LH
-                </span>
-              </div>
-            </div>
-
-            <div className="contact-detail-row glass-card">
-              <div className="contact-icon-circle">
-                <MapPin size={18} />
-              </div>
-              <div className="contact-detail-content">
-                <span className="detail-label">BRANCH OFFICE</span>
-                <span className="detail-value">Coimbatore, India</span>
+                <span className="detail-label">ADDRESS</span>
+                <span className="detail-value">Daimler Green, Alverley Road, CV6 3LH</span>
               </div>
             </div>
           </div>

@@ -152,6 +152,7 @@
 .main-content {
   flex-grow: 1;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .page-container {
@@ -2378,17 +2379,36 @@
     font-size: 22px;
   }
 
-  /* Floating badges on mobile */
-  .floating-badge-glass {
-    display: none;
-  }
-
-  .badge-top-right {
-    right: 5px;
-  }
-
-  .badge-bottom-left {
-    left: 5px;
+  /* Floating badges, background dots, and decorative glow circles on mobile */
+  .floating-badge-glass,
+  .floating-orange-dot,
+  .floating-blue-dot,
+  .floating-white-dot,
+  .about-dot,
+  .services-dot-1,
+  .services-dot-2,
+  .services-dot-3,
+  .services-dot-4,
+  .career-dot-1,
+  .career-dot-2,
+  .career-dot-3,
+  .contact-dot-1,
+  .contact-dot-2,
+  .contact-dot-3,
+  .hero-image-glow,
+  .about-image-glow,
+  .hero-yellow-glow-circle,
+  .services-yellow-glow-circle,
+  .services-blue-glow-bottom-right,
+  .product-image-glow-blue,
+  .contact-yellow-glow-circle,
+  .contact-blue-glow-bottom-right,
+  .contact-half-circle-left,
+  .hero-half-circle-left,
+  .career-half-circle-left,
+  .career-blue-glow-bottom-right,
+  .career-yellow-glow-circle {
+    display: none !important;
   }
 
   /* --- ABOUT SECTION MOBILE --- */
