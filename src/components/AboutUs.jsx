@@ -1,6 +1,6 @@
-import { Heart, Sparkles, Target } from 'lucide-react';
+import { Heart, Sparkles, Target, Users } from 'lucide-react';
 import ScrollAnimate from './ScrollAnimate';
-import heroImg from '../assets/about.jpg';
+import heroImg from '../assets/about.png';
 
 export default function AboutUs() {
   const values = [
@@ -18,6 +18,11 @@ export default function AboutUs() {
       icon: <Target size={20} />,
       title: 'Real outcomes',
       desc: 'We measure success by progress, confidence, and exam results.'
+    },
+    {
+      icon: <Users size={20} />,
+      title: 'Lighter load, stronger support',
+      desc: 'We reduce teacher workload with smart automation, and give parents the clarity they need — so everyone can focus on what matters most.'
     }
   ];
 
@@ -48,7 +53,7 @@ export default function AboutUs() {
             </h1>
 
             <p className="about-hero-desc">
-              Dolphin Technologies is an IT company crafting AI-powered platforms for 11+ and GCSE exam preparation. We connect young minds to teachers, and give parents a clear window into their child's progress.
+              Dolphins Technology is an IT company crafting AI-powered platforms for 11+ and GCSE exam preparation. We connect young minds to teachers, and give parents a clear window into their child's progress.
             </p>
 
             <p className="about-hero-desc">
@@ -62,7 +67,7 @@ export default function AboutUs() {
               <img
                 src={heroImg}
                 className="about-main-image"
-                alt="Dolphin Technologies glass dolphin illustration"
+                alt="Dolphins Technology glass dolphin illustration"
               />
             </div>
           </ScrollAnimate>

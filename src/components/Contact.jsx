@@ -66,7 +66,7 @@ export default function Contact() {
               </div>
               <div className="contact-detail-content">
                 <span className="detail-label">PHONE</span>
-                <span className="detail-value">+91 9952940444</span>
+                <span className="detail-value">+44 7352 312802</span>
               </div>
             </div>
 
@@ -75,8 +75,21 @@ export default function Contact() {
                 <MapPin size={18} />
               </div>
               <div className="contact-detail-content">
-                <span className="detail-label">LOCATION</span>
-                <span className="detail-value">Coimbatore</span>
+                <span className="detail-label">HEAD OFFICE</span>
+                <span className="detail-value">
+                  Dolphins Technology, Daimler Green,<br />
+                  Alverley Road, CV6 3LH
+                </span>
+              </div>
+            </div>
+
+            <div className="contact-detail-row glass-card">
+              <div className="contact-icon-circle">
+                <MapPin size={18} />
+              </div>
+              <div className="contact-detail-content">
+                <span className="detail-label">BRANCH OFFICE</span>
+                <span className="detail-value">Coimbatore, India</span>
               </div>
             </div>
           </div>

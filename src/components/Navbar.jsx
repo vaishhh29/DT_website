@@ -4,17 +4,8 @@ import { Menu, X } from 'lucide-react';
 import logoImg from '../assets/logo.jpeg';
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Scroll to top and close menu when route changes
   useEffect(() => {
@@ -31,15 +22,15 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
+    <nav className={`navbar ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-brand" onClick={() => setIsMenuOpen(false)}>
           <div className="logo-wrapper">
-            <img src={logoImg} className="company-logo" alt="Dolphin Technologies Logo" />
+            <img src={logoImg} className="company-logo" alt="Dolphins Technology Logo" />
           </div>
           <span className="brand-name">
-            <span className="brand-dolphin-techno">Dolphin Techno</span>
-            <span className="brand-logies">logies</span>
+            <span className="brand-dolphin-techno">Dolphins Techno</span>
+            <span className="brand-logies">logy</span>
           </span>
         </Link>
 
@@ -72,8 +63,8 @@ export default function Navbar() {
         </div>
 
         {/* Hamburger button (visible on mobile only) */}
-        <button 
-          className="navbar-hamburger" 
+        <button
+          className="navbar-hamburger"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle navigation menu"
         >

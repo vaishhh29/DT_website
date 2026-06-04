@@ -1,34 +1,29 @@
-/* Dolphin Technologies Component Stylesheet */
+/* Dolphins Technology Component Stylesheet */
 
 /* Header/Navbar Styles */
 
 
 .navbar {
-  position: fixed;
-  top: 24px;
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: auto;
   z-index: 1000;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  padding: 12px 24px;
   background: transparent;
   border-bottom: none;
   box-shadow: none;
-  pointer-events: none;
-}
-
-.navbar.scrolled {
-  top: 12px;
+  pointer-events: auto;
 }
 
 .navbar-container {
   width: 100%;
   max-width: 1240px;
-  height: 72px;
+  height: 68px;
   background: #f3fcff;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -40,16 +35,6 @@
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.85);
   pointer-events: auto;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.navbar.scrolled .navbar-container {
-  height: 64px;
-  background: rgba(255, 255, 255, 0.15) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.3) !important;
 }
 
 .navbar-brand {
@@ -107,7 +92,7 @@
 }
 
 .brand-logies {
-  background: linear-gradient(135deg, #66a4af 40%, #f59e0b 70%);
+  background: linear-gradient(135deg, #66a4af 20%, #f59e0b 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2207,18 +2192,14 @@
 
 @media (max-width: 768px) {
   .navbar {
-    top: 12px;
-    padding: 0 16px;
+    top: 0;
+    padding: 8px 16px;
   }
 
   .navbar-container {
     height: 60px;
     padding: 0 8px 0 16px;
     border-radius: 9999px;
-  }
-
-  .navbar.scrolled .navbar-container {
-    height: 60px;
   }
 
   .logo-wrapper {
@@ -3525,8 +3506,10 @@
 
 .about-values-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
 .about-value-card {
@@ -3535,15 +3518,15 @@
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 24px;
-  padding: 45px 35px;
+  border-radius: 20px;
+  padding: 32px 28px;
   text-align: left;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.85);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 16px;
   /* Exclude transform and opacity on base to prevent collision with entry animations */
   transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
@@ -3764,4 +3747,155 @@
   background: #f97316 !important;
   color: #ffffff !important;
   box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+/* ===== CAREER JOB CARD STYLES ===== */
+.career-job-card {
+  width: 100%;
+  max-width: 750px;
+  background: #f1fbff !important;
+  border: 1px solid rgba(0, 132, 255, 0.12);
+  border-radius: 28px;
+  padding: 40px 44px;
+  box-shadow: 0 20px 50px rgba(0, 86, 179, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.career-job-header {
+  margin-bottom: 20px;
+}
+
+.career-job-title {
+  font-family: var(--heading);
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+
+.career-job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.career-meta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 132, 255, 0.08);
+  color: #0056b3;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 132, 255, 0.12);
+}
+
+.career-job-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #475569;
+  margin-bottom: 28px;
+}
+
+.career-requirements-section {
+  margin-bottom: 24px;
+}
+
+.career-req-title {
+  font-family: var(--heading);
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.career-req-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.career-req-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #334155;
+}
+
+.career-req-icon {
+  color: #0084ff;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.career-req-list.nice-to-have .career-req-icon {
+  color: #f59e0b;
+}
+
+/* Mobile responsive career job card */
+@media (max-width: 768px) {
+  .career-job-card {
+    padding: 28px 22px;
+  }
+
+  .career-job-title {
+    font-size: 22px;
+  }
+
+  .career-job-meta {
+    flex-direction: column;
+  }
+
+  .career-meta-tag {
+    width: fit-content;
+  }
+}
+
+/* ===== FOOTER SOCIAL LINKS ===== */
+.footer-social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-social-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer location items */
+.footer-location-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-location-item strong {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.65);
 }

@@ -1,6 +1,6 @@
 import { ArrowRight, Sparkles, BrainCircuit } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroImg from '../assets/hero.jpg';
+import heroImg from '../assets/hero.png';
 import ScrollAnimate from './ScrollAnimate';
 
 export default function Hero() {
@@ -28,13 +28,13 @@ export default function Hero() {
                 <span className="text-connecting">Connecting</span> <br />
                 <span className="text-teal">young</span> <span className="text-gold">minds</span> <br />
                 <span className="text-black">to brilliant <br />
-                teachers.</span>
+                  teachers.</span>
               </h1>
             </ScrollAnimate>
 
             <ScrollAnimate animationType="fade" delay={100}>
               <p className="hero-subtitle-screenshot">
-                Dolphin Technologies builds intelligent learning experiences for 11+ and GCSE preparation — where teachers, students, and parents grow together.
+                Dolphins Technology builds intelligent learning experiences for 11+ and GCSE preparation — where teachers, students, and parents grow together.
               </p>
             </ScrollAnimate>
 
@@ -71,7 +71,7 @@ export default function Hero() {
               <img
                 src={heroImg}
                 className="hero-main-image"
-                alt="Dolphin Technologies glass dolphin mascot"
+                alt="Dolphins Technology glass dolphin mascot"
               />
               {/* Floating Glass Badges */}
               <div className="floating-badge-glass badge-top-right">
