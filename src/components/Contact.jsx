@@ -66,7 +66,8 @@ export default function Contact() {
               </div>
               <div className="contact-detail-content">
                 <span className="detail-label">PHONE</span>
-                <span className="detail-value">+44 7352 312802</span>
+                <span className="detail-value">Headquarters: +44 7352 312802</span>
+                <span className="detail-value">Branch: +91 9952940444</span>
               </div>
             </div>
 
@@ -76,7 +77,8 @@ export default function Contact() {
               </div>
               <div className="contact-detail-content">
                 <span className="detail-label">ADDRESS</span>
-                <span className="detail-value">Daimler Green, Alverley Road, CV6 3LH</span>
+                <span className="detail-value">Headquarters: Daimler Green, Alverley Road, CV6 3LH</span>
+                <span className="detail-value">Branch: Coimbatore, India</span>
               </div>
             </div>
           </div>
